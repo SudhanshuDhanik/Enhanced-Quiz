@@ -1,0 +1,46 @@
+@import "tailwindcss";
+/* index.css or tailwind.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* prevent scrollbars */
+}
+
+
+
+
+
+
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  color: black;
+  overflow-y: scroll;
+  padding: 20px;
+
+  /* hide scrollbar cross-browser */
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.quiz-container::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+
