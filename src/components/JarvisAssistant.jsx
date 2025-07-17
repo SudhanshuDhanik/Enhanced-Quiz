@@ -28,7 +28,7 @@ const JarvisAssistant = () => {
     const callGeminiApi = async (message) => {
       try {
         const res = await fetch(
-          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`,
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBifxYoSp18DsMxYKrXvqVPgK0V-Kx89rk`,
           {
             method: "POST",
             headers: {
